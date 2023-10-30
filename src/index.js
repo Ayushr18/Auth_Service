@@ -23,14 +23,6 @@ const prepareAndStartServer = () => {
         if(process.env.DB_SYNC) {
             db.sequelize.sync({ alter: true })
         }
-
-         //const service = new UserService();
-        // const newToken = service.createToken({email: 'ayushsunilraj@gmail.com', id: 1})
-        // console.log("new token is", newToken);
-
-        // const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImF5dXNoc3VuaWxyYWpAZ21haWwuY29tIiwiaWQiOjEsImlhdCI6MTY5ODQ4ODk0NSwiZXhwIjoxNjk4NDkyNTQ1fQ.POz_rNPsLDTK4gwUYmkaa1rCxG6yZlYtUjUleOYNlIA'
-        // const response = service.verifyToken(token);
-        // console.log(response);
     });
 }
 
