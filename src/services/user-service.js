@@ -36,6 +36,9 @@ class UserService {
             return newJWT;
 
         } catch (error) {
+            if(error.name === 'AttributeNotFound') {
+                throw error;
+            }
             console.log("something went wrong in sign-in process");
             throw error;
         }
